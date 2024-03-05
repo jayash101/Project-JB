@@ -50,7 +50,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 10vh;
@@ -120,5 +120,6 @@ a{
         background-color: #5417D7;
         color: white;
         box-shadow: 0 0 1vw #5417D7;
+        text-shadow: none;
     }
 }
