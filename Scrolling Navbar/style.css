@@ -11,18 +11,18 @@ body {
     width: 100%;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-/* Header Container */
-.headerContainer{
+/* Header Section */
+.headerContainer {
     height: 100%;
     width: 100%;
     position: relative;
 
-    .backgroundSection{
+    .backgroundSection {
         height: 100%;
         width: 100%;
         background-image: url("https://images.unsplash.com/photo-1709310875357-dd82b6a761c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -33,7 +33,7 @@ a{
         z-index: -1;
     }
 
-    .overlaySection{
+    .overlaySection {
         height: 100%;
         width: 100%;
         position: absolute;
@@ -42,84 +42,86 @@ a{
         background-color: black;
         opacity: 0.7;
     }
-}
 
-/* Navigation Bar */
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10vw;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10vh;
-    color: white;
-
-    .menuList {
-        list-style: none;
+    /* Navigation Bar */
+    .navBar {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 2vw;
+        padding: 0 10vw;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        color: white;
 
-        .menus {
-            letter-spacing: 0.1vw;
-            transition: all 400ms ease;
+        .menuList {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+
+            .menus {
+                letter-spacing: 0.1vw;
+                transition: all 400ms ease;
+            }
+
+            .menus:hover {
+                transition: all 400ms ease;
+                color: #5417D7;
+                text-shadow: 0 0 0.5vw;
+            }
+        }
+    }
+
+    /* Content Section */
+    .contentSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        color: white;
+
+        h1 {
+            font-size: 3rem;
+            word-spacing: 1vw;
+            letter-spacing: 0.2vw;
         }
 
-        .menus:hover{
-            transition: all 400ms ease;
-            color: #5417D7;
-            text-shadow: 0 0 0.5vw;
+        p {
+            width: 40vw;
+            text-align: center;
+            font-family: "Calibri";
+            font-size: 1.1rem;
+        }
+
+        button {
+            background-color: transparent;
+            padding: 1vh 0.5vw;
+            letter-spacing: 0.2vw;
+            word-spacing: 0.2vw;
+            font-weight: 600;
+            border: 2px solid white;
+            color: white;
+            text-shadow: 0 0 0.5vw white;
+            box-shadow: 0 0 0.5vw white;
+            transition: all 300ms ease;
+        }
+
+        button:hover {
+            cursor: pointer;
+            transition: all 300ms ease;
+            border: 2px solid #5417D7;
+            background-color: #5417D7;
+            color: white;
+            box-shadow: 0 0 1vw #5417D7;
+            text-shadow: none;
         }
     }
 }
 
-/* Content Section */
-.contentSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    color: white;
-
-    h1{
-        font-size: 3rem;
-        word-spacing: 1vw;
-        letter-spacing: 0.2vw;
-    }
-
-    p{
-        width: 40vw;
-        text-align: center;
-        font-family: "Calibri";
-        font-size: 1.1rem;
-    }
-
-    button{
-        background-color: transparent;
-        padding: 1vh 0.5vw;
-        letter-spacing: 0.2vw;
-        word-spacing: 0.2vw;
-        font-weight: 600;
-        border: 2px solid white;
-        color: white;
-        text-shadow: 0 0 0.5vw white;
-        box-shadow: 0 0 0.5vw white;
-        transition: all 300ms ease;
-    }
-
-    button:hover{
-        cursor: pointer;
-        transition: all 300ms ease;
-        border: 2px solid #5417D7;
-        background-color: #5417D7;
-        color: white;
-        box-shadow: 0 0 1vw #5417D7;
-        text-shadow: none;
-    }
-}
+/* Main Section */
