@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1708724195876-1156245fce21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    padding: 4vh 3vw;
+    box-shadow: 0 0 0.5vw black;
+    position: relative;
+}
+
+.topic{
+    font-size: 3rem;
+    color: #2a9d8f;
+    -webkit-text-stroke: 0.5px black;
+    margin-bottom: 2vh;
+    letter-spacing: 0.2vw;
+}
+
+.topic::selection{
+    background-color: #2a9d8f;
+    color: #f4a261;
+}
+
+.clickMe{
+    padding: 0.5vh 0.5vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4a261;
+    color: black;
+    outline: 1px solid black;
+    margin-block: 2vh;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+
+.clickMe:hover{
+    cursor: pointer;
+    color: #fefae0;
+    outline-color: #fefae0;
+    box-shadow: 0 0 0.5vw #f4a261;
+    transition: all 200ms ease;
+}
+
+
+.popUpBox{
+    height: 40vh;
+    width: 60vh;
+    background-color: white;
+    box-shadow: 0 0 0.5vw black;
+    position: absolute;
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.25vw;
+    font-family: "Calibri";
+}
+
+.back{
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1vh 1vw;
+    color: #f4a261;
+}
+
+.back:hover{
+    cursor: pointer;
+    transition: all 250ms ease;
+    color: #fefae0;
+    filter: drop-shadow(0 0 0.25vw #f4a261);
+    transform: scale(1.1);
+}
+
+/* Popup Box Show */
+.popUpShow{
+    display: block;
+    animation-name: popUp;
+    animation-duration: 400ms;
+    z-index: 2;
+}
+
+/* Background Display */
+.backgroundDisplay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    filter: opacity(0.8);
+}
+
+@keyframes popUp {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

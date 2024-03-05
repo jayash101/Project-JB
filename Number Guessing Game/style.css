@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding: 2vh;
+    padding-bottom: 20vh;
+    color: pink;
+    text-shadow: 0 0 1vw purple;
+}
+
+.container{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.container p{
+    color: lightgreen;
+}
+
+.userInput{
+    width: 15%;
+    text-indent: 0.5rem;
+    padding: 1vh 0;
+    font-size: 1.1rem;
+    color: violet;
+    border: none;
+    border-radius: 2px;
+}
+
+.userInput:focus{
+    outline: 2px solid violet;
+    box-shadow: 0 0 1vw;
+    transition: all 200ms ease;
+}
+
+.userInput::placeholder{
+    color: lightpink;
+}
+
+.submit{
+    padding: 0.5vh 0.5vw;
+    font-size: 1rem;
+    background-color: purple;
+    border: none;
+    border-radius: 2px;
+    outline: 1px solid purple;
+    color: snow;
+}
+
+.submit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1vw violet inset;
+    outline: none;
+    color: white;
+    text-shadow: 0 0 0.1vw white;
+    transition: all 400ms ease;
+}
+
+.displayOutput{
+    font-size: 3rem;
+    font-family: "Lato";
+    letter-spacing: 0.2vw;
+    text-shadow: 0 0 0.5vw gray;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct{
+    color: green;
+}
+
+.incorrect{
+    color: red;
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    padding-block: 5vh;
+    font-size: 3rem;
+    color: orange;
+    text-shadow: 0 0 0.3vw green;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.userInput{
+    font-size: 4rem;
+    border: none;
+    border-radius: 50%;
+    padding: 3vh 1.5vw;
+    background-color: blueviolet;
+    text-shadow: 0 0 0.5vw black;
+    box-shadow: 0 0 0.5vw inset;
+}
+
+.userInput:hover{
+    cursor: pointer;
+    background-color: royalblue;
+    transition: all ease 200ms;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    padding-block: 10vh;
+}
+
+.playerChoice, .scoreDisplay:nth-child(1){
+    color: skyblue;
+}
+
+.computerChoice, .scoreDisplay:nth-child(2){
+    color: lightcoral;
+}
+
+.resultDisplay{
+    letter-spacing: 0.5vw;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.tie{
+    color: yellow;
+    font-weight: 600;
+}
+
+.winner{
+    color: green;
+    font-weight: 600;
+}
+
+.loser{
+    color: red;
+    font-weight: 600;
+}

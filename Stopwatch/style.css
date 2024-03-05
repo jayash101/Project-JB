@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    background-color: black;
+}
+
+.timer{
+    color: rgba(255, 255, 255, 0.618);
+    font-size: 4rem;
+    text-shadow: 0 0 0.5vw;
+}
+
+.buttons{
+    display: flex;
+    gap: 2vw;
+}
+
+.start, .stop, .reset{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh 1vw;
+    color: blue;
+    background-color: slategray;
+}
+
+.start:hover,.stop:hover,.reset:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1vw white;
+    text-shadow: 0 0 0.1vw white;
+}

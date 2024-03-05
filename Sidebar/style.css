@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif Khojki";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main navigation bar */
+.navBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 20vw;
+    height: 100vh;
+    padding: 4vh 1vw;
+    transform: translate(-105%);
+    transition: all 500ms ease;
+    box-shadow: 0 0 1vw black;
+    position: absolute;
+}
+
+/* Menu Show */
+.menuDisplay{
+    display: flex;
+    transform: translate(0);
+}
+
+/* Upper Section */
+.upperSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+    gap: 10vh;
+}
+
+/* Header Section */
+.headerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    letter-spacing: 0.5vw;
+    text-shadow: 0.1vw 0.1vw 0.2vw #bde0fe;
+    color: #023047;
+}
+
+.back{
+    font-size: 2rem;
+    color: #023047;
+}
+
+.back:hover{
+    cursor: pointer;
+    color: #219ebc;
+    filter: drop-shadow(0 0 0.2vw #023047);
+    transition: all 200ms ease;
+}
+
+/* Menu Section */
+.menuList{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #023047be;
+    letter-spacing: 0.1vw;
+    font-size: 1.2rem;
+}
+
+/* Menu items */
+.menus{
+    padding-block: 1vh;
+    user-select: none;
+}
+
+/* Hover Menu items */
+.menus:hover{
+    background-color: #219ebc;
+    color: white;
+    text-indent: 0.5vw;
+    transition: all 300ms ease-out;
+}
+
+/* Icon Section */
+.iconMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    list-style: none;
+    font-size: 1.2rem;
+    color: #219ebc;
+}
+
+.icons a:hover{
+    color: #023047;
+    filter: drop-shadow(0 0 0.5vw #023047);
+    transition: all 200ms ease;
+}
+
+/* Hamburger Menu Icon */
+.hamburgerMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    margin: 3vh 2vw;
+    color: #023047;
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 300ms ease;
+}
+
+.hamburgerMenu:hover{
+    cursor: pointer;
+    color: #219ebc;
+    filter: drop-shadow(0 0 1vw #023047);
+    animation: none;
+}
+
+.hamRotate{
+    display: none;
+}
+
+/* Content area */
+.secondary{
+    position: relative;
+    height: 100vh;
+    background-color: #bde0fe;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+/* Logo outside sidebar */
+.logo2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 3vh 1vw;
+    background-color: white;
+}
+
+/* Decrease brightness outside side bar */
+.dim{
+    filter: brightness(50%);
+}
+
+/* Animation for hamburgerMenu */
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+/* Responsive menu bar */
+@media screen and (max-width: 768px) {
+    .navBar{
+        width: 100%;
+        padding: 4vh 4vw;
+        box-shadow: none;
+    }
+
+    .logo a{
+        font-size: 3rem;
+    }
+
+    .logo2{
+        padding-left: 4vw;
+        padding-top: 4vh;
+        background-color: lightgrey;
+    }
+    
+    .back{
+        display: none;
+    }
+    
+    .menus{
+        font-size: 2rem;
+        text-align: center;
+        padding: 2vh 0;
+    }
+
+    .menus:hover{
+        text-indent: 3vw;
+    }
+
+    .hamburgerMenu{
+        animation: none;
+        font-size: 4rem;
+        top: 1%;
+        right: 2%;
+    }
+
+    .iconMenu{
+        font-size: 2rem;
+        gap: 4vw;
+    }
+
+    .hamRotate{
+        display: block;
+        transform: rotate(270deg);
+    }
+}

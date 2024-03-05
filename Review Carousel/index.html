@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Carousel</title>
+    <link rel="stylesheet" href="/Review Carousel/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Annapurna+SIL:regular,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+<body>
+    <!-- Content Heading -->
+    <header class="headContent">
+        <h1 class="heading">Our Reviews</h1>
+        <hr class="line">
+    </header>
+
+    <!-- Main content -->
+    <section class="container">
+
+        <!-- Reviewer Image -->
+        <section class="imageSection">
+            <img src="/Review Carousel/person1.jpg" alt="Person Photo" class="photo">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 24">
+                    <path fill="currentColor" d="M9.951 0C4.455 0 0 4.455 0 9.951s4.455 9.951 9.951 9.951h.586V24c5.737-2.693 9.366-8.781 9.366-14.049v-.008C19.903 4.452 15.451 0 9.96 0h-.008zm-.585 10.537l-1.17 2.343h-1.76l1.17-2.342h-1.76V7.024h3.512v3.512zm4.683 0L12.88 12.88h-1.76l1.17-2.342h-1.76V7.024h3.512v3.512z"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Reviewer Content -->
+        <section class="contentSection">
+
+            <!-- Name of the Reviewer -->
+            <div class="name">Dot Ramsey</div>
+
+            <!-- Job of the reviewer -->
+            <div class="profession">Web Developer</div>
+
+            <!-- Main Review -->
+            <div class="review">
+                I am pleasantly surprised at the ease of use and quality of this mouse. I plugged it into my PC, which is running Zorin OS (Linux) and all the buttons and maneuverability worked straight away without me having to do anything.
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <section class="navigationSection">
+            
+            <!-- Buttons to change to other reviewers -->
+            <div class="controllers">
+                <button class="prev"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                <button class="next"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+            </div>
+
+            <!-- Buttons for randomizing order -->
+            <button class="randomizerButton">Surprise Me</button>
+
+        </section>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="/Review Carousel/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.menuBar {
+    box-shadow: 0 0 0.5vw;
+    position: fixed;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.menus {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+}
+
+.logo {
+    color: slateblue;
+    font-weight: 900;
+    user-select: none;
+}
+
+.menuSection2 {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.menu a {
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    cursor: pointer;
+    color: gold;
+    text-shadow: 0 0 0.2vw yellow;
+    transition: all 200ms ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 4vh;
+}
+
+.hexData {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 1vw;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.hexCode {
+    letter-spacing: 3px;
+    color: aqua;
+}
+
+.clickMe {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1vh 1.5vw;
+    border: none;
+    border-radius: 5px;
+    outline: 3px solid black;
+    letter-spacing: 0.2vw;
+    font-size: 0.8rem;
+    background-color: transparent;
+    user-select: none;
+}
+
+.clickMe:hover {
+    cursor: pointer;
+    color: darkgoldenrod;
+    outline: 3px solid darkgoldenrod;
+    box-shadow: 0 0 0.5vw;
+}
+
+.clickMe:active{
+    outline: 3px solid gold;
+    color: gold;
+}
+
+.reverse{
+    background-color: white;
+    color: black;
+    outline: 3px solid white;
+}

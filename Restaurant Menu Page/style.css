@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fefae180;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10vh;
+    gap: 1vh;
+}
+
+h1 {
+    color: #283618;
+    font-family: "Madimi One";
+    font-size: 3rem;
+    letter-spacing: 0.25vw;
+}
+
+.underline {
+    height: 1vh;
+    width: 8vw;
+    background-color: #bc6c25;
+    margin-bottom: 4vh;
+}
+
+.foodMenu {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+}
+
+.foodMenu li button {
+    padding: 0.5vh 0.5vw;
+    border: none;
+    border-radius: 5px;
+    outline: 2px solid #dda15e;
+    color: #dda15e;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: "Inria Sans";
+    transition: all 200ms ease;
+}
+
+.foodMenu li button:hover {
+    cursor: pointer;
+    background-color: #bc6c25;
+    outline: none;
+    color: white;
+    box-shadow: 0 0 0.5vw #bc6c25;
+    transition: all 300ms ease;
+}
+
+.mainMenu {
+    font-family: "Inria Sans";
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vh;
+    padding: 0 16vw;
+}
+
+.menuItem {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    gap: 1vw;
+    animation: transition 1s ease;
+    transform: animation 1s ease;
+}
+
+.image {
+    overflow: hidden;
+    width: 15vw;
+    height: 8vw;
+    border: none;
+    border-radius: 4px;
+    outline: 3px solid #dda15e;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 500ms ease;
+}
+
+.image img:hover{
+    cursor: pointer;
+    transform: scale(120%);
+    opacity: 0.6;
+    transition: all 500ms ease;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.topContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dda15e;
+    padding-block: 0.5vh;
+    margin-bottom: 2vh;
+    letter-spacing: 0.1vw;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 0.9rem;
+}
+
+.price {
+    color: #dda15e;
+}
+
+.description {
+    font-size: 0.8rem;
+}
+
+@keyframes transition {
+    0% {
+        transform: translateY(10%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+    *{
+        font-size: 1.2rem;
+    }
+    
+    .mainMenu{
+        display: flex;
+        flex-direction: column;
+    }
+}
