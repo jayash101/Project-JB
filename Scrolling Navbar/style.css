@@ -127,6 +127,8 @@ header {
 
 /* Main Section */
 main {
+    width: 100%;
+    min-height: calc(100% - 20%);
 
     /* About Us Section */
     .aboutUsSection {
@@ -223,6 +225,33 @@ main {
         }
     }
 
+    /* Tour Section */
+    .tourSection{
+        width: 100%;
+        height: 60vh;
+
+        h1{
+            font-size: 3rem;
+            text-align: center;
+            padding-block: 10vh;
+        }
+    }
+}
+
+/* Footer Section */
+footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03045e;
+    color: white;
+
+    .footerContent, span{
+        font-family: monospace;
+        font-size: 1.25rem;
+    }
 }
 
 
