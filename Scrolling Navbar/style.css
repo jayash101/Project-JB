@@ -17,7 +17,7 @@ a {
 }
 
 /* Header Section */
-.headerContainer {
+header {
     height: 100%;
     width: 100%;
     position: relative;
@@ -54,6 +54,7 @@ a {
         width: 100%;
         height: 10vh;
         color: white;
+        z-index: 999;
 
         .menuList {
             list-style: none;
@@ -125,3 +126,115 @@ a {
 }
 
 /* Main Section */
+main {
+
+    /* About Us Section */
+    .aboutUsSection {
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+
+        .aboutUsContent {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            z-index: 1;
+            animation: fadeIn 1s ease-in-out;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                width: 50%;
+                font-size: 1.1rem;
+                text-align: center;
+            }
+
+            .aboutUsImageContainer {
+                height: 30vh;
+                width: 40vw;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: filter 500ms ease;
+                }
+
+                .imgBrightness {
+                    filter: brightness(0.5);
+                    transition: filter 500ms ease;
+                }
+
+                button{
+                    position: absolute;
+                    top: 50%;
+                    left: 45%;
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /* Services Section */
+    .ourServicesSection{
+        width: 100%;
+        height: 60vh;
+        background-image: url("https://images.unsplash.com/photo-1695354493853-1b7c138b404c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+        /* opacity: 0.6; */
+
+        .overlay{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background-color: black;
+            opacity: 0.7;
+        }
+
+        .ourServicesContent{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            
+            h1{
+                text-align: center;
+                padding-block: 5vh;
+                font-size: 3rem;
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+/* Animation Section */
+@keyframes fadeIn {
+    0% {
+        transform: translateY(20%);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
