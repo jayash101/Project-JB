@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scroll Project</title>
     <link rel="stylesheet" href="/Scrolling Navbar/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:regular,italic,700" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:regular,italic,700" rel="stylesheet" /> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             </div>
 
             <ul class="menuList">
-                <a href="#">
+                <a href="/Scrolling Navbar/index.html">
                     <li class="menus">Home</li>
                 </a>
                 <a href="#">
@@ -34,6 +35,10 @@
                     <li class="menus">Tours</li>
                 </a>
             </ul>
+
+            <div class="hamBurger">
+                <ion-icon name="menu-sharp"></ion-icon>
+            </div>
         </nav>
 
         <section class="contentSection">
@@ -108,7 +113,7 @@
     <!-- Footer Content -->
     <footer>
         <p class="footerContent">
-            Copyright &copy; Travel Tours Company <span class="currentDate">{Date}</span> All Rights Reserved
+            Copyright &copy; Travel Tours Company <span class="currentDate"></span> All Rights Reserved
         </p>
     </footer>
     <script src="/Scrolling Navbar/script.js"></script>

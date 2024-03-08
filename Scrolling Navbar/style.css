@@ -9,6 +9,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -73,6 +74,18 @@ header {
                 text-shadow: 0 0 0.5vw;
             }
         }
+
+        .hamBurger{
+            display: none;
+        }
+    }
+
+    .navBarScroll{
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 0.5vw black;
+        transition: all 500ms ease;
+        animation: slideDown 500ms ease;
     }
 
     /* Content Section */
@@ -265,5 +278,33 @@ footer{
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Section */
+@media screen and (max-width: 768px) {
+    .navBar{
+        background-color: white;
+    }
+    
+    .menuList{
+        color: black;
+        display: none;
+    }
+    
+    .hamBurger{
+        display: block;
+        background-color: red;
     }
 }
