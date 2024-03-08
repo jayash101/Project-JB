@@ -55,6 +55,7 @@ main{
         }
         
         .tabContent{
+            position: relative;
             min-height: 40vh;
             width: 40vw;
             border: none;
@@ -98,4 +99,63 @@ main{
 .addColor{
     background-color: gray;
     color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header{
+        height: 40%;
+
+        h1{
+            font-size: 4rem;
+        }
+
+        p{
+            text-align: center;
+            width: 90%;
+            font-size: 1.5rem;
+        }
+    }
+
+    main{
+        .aboutContent{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .imageContent{
+                width: 90%;
+                height: 50%;
+                margin-bottom: 5vh;
+            }
+
+            .tabContent{
+                width: 90%;
+                margin-bottom: 10vh;
+
+                .tabContainer{
+                    position: relative;
+                    width: 100%;
+
+                    .btn{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .descriptionContainer{
+                    align-items: center;
+                    
+                    h1{
+                        font-size: 3rem;
+                    }
+
+                    p{
+                        text-align: center;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
