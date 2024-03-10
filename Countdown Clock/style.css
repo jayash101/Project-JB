@@ -2,9 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "B612";
 }
 
 html,body{
     height: 100%;
     width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 0 2vw;
+    background-color: #fefae1be;
+
+    .imageContainer{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .imageHolder{
+            height: 60%;
+            width: 90%;
+            overflow: hidden;
+            position: relative;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                user-select: none;
+                -webkit-user-drag: none;
+                transition: all 500ms ease;
+            }
+            
+            img:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+                filter: brightness(0.5);
+            }
+        }
+    }
+
+    .articleContainer{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        .contentHolder{
+            height: 50%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            
+            h1{
+                text-transform: uppercase;
+                color: #283618;
+                font-size: 2rem;
+                letter-spacing: 0.2vw;
+            }
+
+            .about{
+                color: #606c38;
+                font-weight: bold;
+                letter-spacing: 0.2vw;
+                text-transform: capitalize;
+            }
+
+            .info{
+                color: #dda15e;
+                padding: 3vh 0;
+                font-family: "Calibri";
+                width: 90%;
+            }
+
+            .countdownClock{
+                display: flex;
+                gap: 2vh;
+
+                .time{
+                    background-color: #bc6c25;
+                    color: white;
+                    padding: 3vh 3vw;
+                    width: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    user-select: none;
+
+                    .countdownTime{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .articleContainer *::selection{
+        background-color: #283618;
+        color: #fefae1be;
+    }
 }
