@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="/Grocery List/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
 </head>
+
 <body>
     <main>
         <section class="container">
-            
+            <section class="inputSection">
+                <h2>Grocery Bud</h2>
+
+                <!-- Form -->
+                <form class="myForm">
+
+                    <!-- Input and Submit -->
+                    <input type="text" class="myInput" placeholder="eg. eggs">
+                    <button type="submit" class="myButton">Submit</button>
+                </form>
+
+                <!-- List -->
+                <section class="itemsContainer">
+                    <article class="items">
+                        <p class="item">Item</p>
+
+                        <div class="buttonContainer">
+                            <button class="editButton">
+                                <ion-icon name="create-outline" class="icon"></ion-icon>
+                            </button>
+
+                            <button class="deleteButton">
+                                <ion-icon name="trash-bin-outline" class="icon"></ion-icon>
+                            </button>
+                        </div>
+                    </article>
+                </section>
+
+                <button class="clearButton">Clear Items</button>
+            </section>
+
         </section>
     </main>
 
+    <!-- Javascript -->
     <script src="/Grocery List/script.js"></script>
 </body>
+
 </html>
