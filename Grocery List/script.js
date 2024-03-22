@@ -121,8 +121,4 @@ function clearItems() {
     itemsContainer.style.display = 'none';
 
     alert("All items cleared", "red", "green");
-    
-    setTimeout(() => {
-        location.reload();
-    }, 2000);
 }
